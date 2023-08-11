@@ -1,62 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Vite App</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <div class="container text-center">
-    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">WebShop</a>
-        <a class="navbar-brand" href="/">HOME</a>
-      </div>
-    </nav>
-    <div class="row mt-3">
-      <div class="col align-content-center justify-content-center">
-        <div class="card">
-          <img src="/product-images/product-apple.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/product-images/product-apple.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/product-images/product-apple.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<body class="bg-white">
+	<div class="container text-center">
+		<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">WebShop</a>
+				<a class="navbar-brand" href="/">HOME</a>
+			</div>
+		</nav>
+		<div class="row m-1 g-2">
+			<div class="card-header text-bg-info p-2 rounded">Producten</div>
+			<!--bootstrap card for products-->
+			<div class="col-12 col-md-6">
+				<div class="card text-bg-dark">
+					<img src="/product-images/product-apple.jpg" class="card-img-top p-2" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+							the
+							card's
+							content.</p>
+						<div class="col-12 align-items-center justify-content-center text-center">
+							<a href="#" class="btn btn-primary d-inline-block">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--bootstrap card for products-->
+			<div class="col-12 col-md-6">
+				<div class="card text-bg-dark">
+					<img src="/product-images/product-apple.jpg" class="card-img-top p-2" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+							the
+							card's
+							content.</p>
+						<div class="col-12 align-items-center justify-content-center text-center">
+							<a href="#" class="btn btn-primary d-inline-block">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--bootstrap card for products-->
+			<div class="col-12 col-md-6">
+				<div class="card text-bg-dark">
+					<img src="/product-images/product-apple.jpg" class="card-img-top p-2" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+							the
+							card's
+							content.</p>
+						<div class="col-12 align-items-center justify-content-center text-center">
+							<a href="#" class="btn btn-primary d-inline-block">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--bootstrap card for products-->
+			<div class="col-12 col-md-6">
+				<div class="card text-bg-dark">
+					<img src="/product-images/product-apple.jpg" class="card-img-top p-2" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+							the
+							card's
+							content.</p>
+						<div class="col-12 align-items-center justify-content-center text-center">
+							<a href="#" class="btn btn-primary d-inline-block">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--bootstrap card for products-->
+			<div class="col-12 col-md-6">
+				<div class="card text-bg-dark">
+					<img src="/product-images/product-apple.jpg" class="card-img-top p-2" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+							the
+							card's
+							content.</p>
+						<div class="col-12 align-items-center justify-content-center text-center">
+							<a href="#" class="btn btn-primary d-inline-block">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

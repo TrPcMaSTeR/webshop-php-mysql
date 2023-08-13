@@ -1,12 +1,15 @@
 <?php include '../components/header-template.php'; ?>
 
 <?php
-$url = $_SERVER['REQUEST_URI'];
-parse_str(parse_url($url)['query'], $params);
 
-$productId = $params['id'];
+try {
+    parse_str($_SERVER['QUERY_STRING'], $queries);
+    $productId = intval($queries['id']); // prevent sql injection from query string
+} catch (\Throwable $th) {
+    die("Error: " . $th->getMessage());
+}
 
-$result = $conn->query("SELECT * FROM products WHERE id = $productId");
+$result = $conn->query("SELECT * FROM products WHERE id=" . strval($productId | 1));
 
 $product = array(); // Array to store fetched products
 

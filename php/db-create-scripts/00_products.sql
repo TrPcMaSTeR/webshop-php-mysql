@@ -2,7 +2,7 @@
 -- Create table for products
 --
 CREATE TABLE IF NOT EXISTS `products` (
-    `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+    `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
     `name` varchar(255) DEFAULT NULL,
     `description` text DEFAULT NULL,
     `price` decimal(10, 2) DEFAULT NULL,
@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS `products` (
     UNIQUE KEY `id` (`id`)
 );
 --
--- insert 3 example products
+-- insert example products
 --
 INSERT INTO `products` (
         `name`,

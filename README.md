@@ -1,5 +1,3 @@
----
-
 Web Shop Project README
 ========================
 

@@ -3,8 +3,7 @@
 <?php
 
 try {
-    parse_str($_SERVER['QUERY_STRING'], $queries);
-    $productId = intval($queries['id']); // prevent sql injection from query string
+    $productId = intval($_GET['id']); // prevent sql injection from query string
 } catch (\Throwable $th) {
     die("Error: " . $th->getMessage());
 }

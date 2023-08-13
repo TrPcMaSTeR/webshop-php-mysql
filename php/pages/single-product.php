@@ -6,9 +6,7 @@ parse_str(parse_url($url)['query'], $params);
 
 $productId = $params['id'];
 
-// Fetch all products
-$sqlProducts = "SELECT * FROM products WHERE id = $productId";
-$result = $conn->query($sqlProducts);
+$result = $conn->query("SELECT * FROM products WHERE id = $productId");
 
 $product = array(); // Array to store fetched products
 

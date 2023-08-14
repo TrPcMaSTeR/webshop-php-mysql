@@ -1,7 +1,7 @@
 --
--- Create the soldProducts table
+-- Create the orders table
 --
-CREATE TABLE soldProducts (
+CREATE TABLE `orders` (
     id int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
     productId int(10) UNSIGNED NOT NULL,
     userId int(10) UNSIGNED NOT NULL,

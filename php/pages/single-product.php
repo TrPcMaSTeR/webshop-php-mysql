@@ -8,7 +8,7 @@ try {
     die("Error: " . $th->getMessage());
 }
 
-$result = $conn->query("SELECT * FROM products WHERE id=" . strval($productId | 1));
+$result = $conn->query("SELECT * FROM products WHERE id=" . ($productId > 0 ? strval($productId) : "1"));
 
 $product = array(); // Array to store fetched products
 
